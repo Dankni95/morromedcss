@@ -278,19 +278,19 @@ body {
 }
 .planet_space3 { /* // spaceship */
     position: fixed;
-    height: 250px;
-    width: 390px;
+    height: 350px;
+    width: 490px;
     left: 150px;
     top: 80px;
-    z-index: -1;
+    z-index: 2;
     opacity: 0;
     
-    animation: mov2left 200s ease 30s 1;
+    animation: mov2left 90s ease 28s 1;
     
 }
 @keyframes mov2left{
     0%{
-        opacity: 0.5;
+        opacity: 0.6;
     }
 
     50% {
@@ -307,7 +307,7 @@ body {
     100% {
 
         opacity: 0;
-        transform: rotate(5deg);
+        transform: rotateX(60deg);
         left: 300px;
         
 
@@ -316,31 +316,19 @@ body {
 
 .planet_space2 { /*  // smoke top*/
     position: absolute;
-    height: 150px;
-    width: 290px;
+    height: 250px;
+    width: 390px;
     left: 170px;
     top: 120px;
-    z-index: 1;
+    z-index: -1;
     
-    animation: r5 20s ease-in-out 28s  1;
+    animation: r22 15s ease-in-out 27s  1;
     opacity: 0;
 
 }
 
-.planet_space1 { /*  // smoke */
-    position: absolute;
-    height: 150px;
-    width: 290px;
-    left: 170px;
-    top: 220px;
-    z-index: 1;
-    
-    animation: r5 20s ease-in-out 27s forwards;
-    opacity: 0;
 
-}
-
-@keyframes r5 {
+@keyframes r22 {
 
     50% {
         opacity: 0.5;
@@ -350,16 +338,71 @@ body {
 
     55% {
         opacity: 0.2;
-        transform: scale(1.5);
-        transform: rotate(15deg);
+        transform: scale(6.5);
+        transform: rotate(16deg);
 
+
+    }
+    88% {
+
+        opacity: 0.5;
+        transform: rotate(25deg);
+        left: 300px;
+        
 
     }
 
     100% {
 
-        opacity: 0.1;
-        transform: rotate(15deg);
+        opacity: 0.2;
+        transform: rotate(25deg);
+        left: 300px;
+        
+
+    }
+}
+
+.planet_space1 { /*  // smoke */
+    position: absolute;
+    height: 250px;
+    width: 390px;
+    left: 190px;
+    top: 250px;
+    z-index: 1;
+    
+    animation: r5 15s ease-in-out 27s 1;
+    opacity: 0;
+
+}
+
+@keyframes r5 {
+
+    50% {
+        opacity: 0.5;
+        transform: rotate(35deg);
+
+    }
+
+    55% {
+        opacity: 0.3;
+        transform: scale(4.5);
+        transform: rotate(36deg);
+
+
+    }
+    88% {
+
+        opacity: 0.5;
+        transform: rotate(37deg);
+        left: 300px;
+        
+
+    }
+
+    100% {
+
+        opacity: 0.2;
+        transform: rotate(37deg);
         left: 300px;
         
 
