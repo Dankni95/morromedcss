@@ -169,7 +169,7 @@ body {
 }
 
 .planet_planet {
-    position: absolute;
+    position: fixed;
     width: 30px;
     top: 100px;
     left: 900px;
@@ -190,13 +190,13 @@ body {
 
     }
 }
-.planet_planet2 {
+.planet_planet2 { /* //planet in the middle */
     position: fixed;
     width: 50px;
     height: 30px;
 
-    top: 50px;
-    left: 250px;
+    top:250px;
+    left: 950px;
     z-index: 1;
     opacity: 0.4;
     animation: r10 12s ease 7s forwards ;
@@ -218,11 +218,11 @@ body {
 }
 
 .planet_space4 {  /* // explosion */
-    position: absolute;
+    position: fixed;
     height: 450px;
     width: 590px;
-    left: 50px;
-    top: -50px;
+    left: 90px;
+    top: -90px;
     z-index: 1;
     
     animation: r8 600ms ease-in-out 28s forwards;
@@ -274,13 +274,13 @@ body {
     }
 }
 .planet_space3 { /* // spaceship */
-    position: absolute;
+    position: fixed;
     height: 250px;
     width: 390px;
-    left: 100px;
-    top: -20px;
-    z-index: 0;
-    opacity: 0.0;
+    left: 170px;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
     
     animation: mov2left 200s ease 30s 1;
     
@@ -315,12 +315,12 @@ body {
     position: absolute;
     height: 150px;
     width: 290px;
-    left: 100px;
-    top: -20px;
+    left: 170px;
+    top: 120px;
     z-index: 1;
     
     animation: r5 20s ease-in-out 28s  1;
-    opacity: 0.0;
+    opacity: 0;
 
 }
 
@@ -328,12 +328,12 @@ body {
     position: absolute;
     height: 150px;
     width: 290px;
-    left: 200px;
-    top: 100px;
+    left: 170px;
+    top: 220px;
     z-index: 1;
     
     animation: r5 20s ease-in-out 27s forwards;
-    opacity: 0.0;
+    opacity: 0;
 
 }
 
@@ -360,7 +360,7 @@ body {
 }
 
 .space_1 {
-    position: absolute;
+    position: absolute; /* //gif */
     height: 5px;
     width: 10px;
     left: 500px;
